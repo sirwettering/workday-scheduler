@@ -7,19 +7,15 @@ $(document).ready(function () {
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-      // Save Task in Local Storage
       localStorage.setItem(time, text);
     })
    
   function timeTracker() {
-        //get current number of hours.
     var timeNow = moment().hour();
 
-        // loop over time blocks
       $(".time-block").each(function () {
       var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
-            // To check the time and add the classes for background indicators
         if (blockTime < timeNow) {
             $(this).removeClass("future");
             $(this).removeClass("present");
@@ -39,7 +35,6 @@ $(document).ready(function () {
     })
 }
 
-  // Get item from local storage if any
 $("#hour6 .description").val(localStorage.getItem("hour6"));
 $("#hour7 .description").val(localStorage.getItem("hour7"));
 $("#hour8 .description").val(localStorage.getItem("hour8"));
