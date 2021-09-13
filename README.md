@@ -45,6 +45,7 @@ This is a work-day scheduler that allows a user to save events for each hour of 
 - This scheduler is desktop and mobile compatible.
 
 ## Example Image
+![Scheduler](assets/images/scheduler-homepage.png)
 
 ## Contribution
 Made by William Wettering
